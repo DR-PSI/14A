@@ -33,7 +33,7 @@
         <div style="display: flex; flex-direction: column; gap: 6px;">
           <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .18em; text-transform: uppercase; color: #a2968a;">Ward Climate Monitor</div>
           <div style="font-size: 27px; font-weight: 600; letter-spacing: -.01em;">หอผู้ป่วย 14A</div>
-          <div style="font-size: 14.5px; color: #7c7166; line-height: 1.55;">ตรวจวัดอุณหภูมิและความชื้นห้อง 1401–1410 ต่อเนื่อง เกณฑ์อ้างอิง ASHRAE 170</div>
+          <div style="font-size: 14.5px; color: #7c7166; line-height: 1.55;">ตรวจวัดอุณหภูมิและความชื้นห้อง 1401–1415 ต่อเนื่อง เกณฑ์อ้างอิง ASHRAE 170</div>
         </div>
         <div style="display: flex; flex-direction: column; gap: 10px;">
           <button onClick="{{ signIn }}" style="display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; padding: 13px 16px; border-radius: 11px; border: none; background: #2563a8; color: #fff; font-family: inherit; font-size: 15px; font-weight: 500; cursor: pointer;" style-hover="background: #1b4a80;">
@@ -53,7 +53,7 @@
       <div style="max-width: 1560px; margin: 0 auto; padding: 12px 20px; display: flex; align-items: center; gap: 18px; flex-wrap: wrap;">
         <div style="display: flex; flex-direction: column; gap: 1px; margin-right: 4px;">
           <div style="font-size: 18px; font-weight: 600; letter-spacing: -.01em; line-height: 1.2;">หอผู้ป่วย 14A</div>
-          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .14em; text-transform: uppercase; color: #a2968a;">Temp / Humidity · 10 rooms</div>
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .14em; text-transform: uppercase; color: #a2968a;">Temp / Humidity · 15 rooms</div>
         </div>
 
         <div style="display: flex; gap: 8px; flex-wrap: wrap;">
@@ -98,7 +98,7 @@
     <sc-if value="{{ isDashboard }}" hint-placeholder-val="{{ true }}">
       <main style="max-width: 1560px; margin: 0 auto; padding: 16px 20px 40px;">
         <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(268px, 1fr)); gap: 12px;">
-          <sc-for list="{{ rooms }}" as="r" hint-placeholder-count="10">
+          <sc-for list="{{ rooms }}" as="r" hint-placeholder-count="15">
             <div onClick="{{ r.open }}" style="background: #fffdfa; border: 1px solid {{ r.border }}; border-left: 3px solid {{ r.accent }}; border-radius: 13px; padding: 13px 14px 11px; cursor: pointer; display: flex; flex-direction: column; gap: 9px; transition: box-shadow .16s ease, transform .16s ease;" style-hover="box-shadow: 0 12px 26px -20px rgba(58,51,44,.55); transform: translateY(-1px);">
               <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 8px;">
                 <div style="display: flex; align-items: center; gap: 8px;">
@@ -278,7 +278,7 @@ const FB = {
   messagingSenderId: "749137941986",
   appId: "1:749137941986:web:8d9685658a9ac6391b55bb"
 };
-const ROOMS = ["1401","1402","1403","1404","1405","1406","1407","1408","1409","1410"];
+const ROOMS = ["1401","1402","1403","1404","1405","1406","1407","1408","1409","1410","1411","1412","1413","1414","1415"];
 const C = { ok: "#4a8a6f", warn: "#c98a2b", alarm: "#c2543a", off: "#b3a89c", accent: "#2563a8" };
 const RANGES = [{ key: "24h", label: "24 ชม.", hours: 24, step: 15 }, { key: "7d", label: "7 วัน", hours: 168, step: 60 }, { key: "30d", label: "30 วัน", hours: 720, step: 240 }];
 
