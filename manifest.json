@@ -1,0 +1,32 @@
+{
+  "name": "หอผู้ป่วย 14A — ตรวจวัดอุณหภูมิ ความชื้น PM2.5",
+  "short_name": "Ward 14A",
+  "description": "ตรวจวัดอุณหภูมิ ความชื้น และฝุ่น PM2.5 ต่อเนื่อง เกณฑ์อ้างอิง ASHRAE 170",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f4f1ec",
+  "theme_color": "#2f6b46",
+  "lang": "th",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
